@@ -1,4 +1,6 @@
 <script lang="ts" setup>
+import ArticleH2 from '~/components/ArticleH2.vue'
+
 const route = useRoute()
 const { data: page } = await useAsyncData(route.path, () => {
   return queryCollection('content').path(route.path).first()
@@ -19,7 +21,7 @@ const { data: page } = await useAsyncData(route.path, () => {
             :value="page"
             class="prose max-w-full"
             :components="{
-              h2: 'ArticleH2',
+              h2: ArticleH2,
             }"
           />
         </template>
