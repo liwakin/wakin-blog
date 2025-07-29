@@ -3,6 +3,12 @@ useSeoMeta({
   title: 'Blog - Wakin',
   description: '分享欲来的时候，就写点什么。',
 })
+
+useHead({
+  htmlAttrs: {
+    lang: 'zh-CN',
+  },
+})
 </script>
 
 <template>

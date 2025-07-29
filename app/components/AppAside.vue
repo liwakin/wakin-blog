@@ -9,12 +9,14 @@ import { SOCIAL_LINKS, EMAILS, ABOUT_ME } from '~/constants'
         src="/avatar.jpg"
         class="aspect-square w-full object-cover"
         :alt="`${ABOUT_ME.name}'s Avatar`"
+        loading="lazy"
+        decoding="async"
       />
 
       <div class="">{{ ABOUT_ME.introduction }}</div>
 
       <div class="space-y-3">
-        <h1 class="border-b border-dashed">链接</h1>
+        <h1 class="border-b border-dashed text-base">链接</h1>
         <ul class="grid grid-cols-2 gap-x-4 gap-y-2 px-1">
           <li v-for="socialLink in SOCIAL_LINKS" :key="socialLink.name">
             <NuxtLink
@@ -33,7 +35,7 @@ import { SOCIAL_LINKS, EMAILS, ABOUT_ME } from '~/constants'
       </div>
 
       <div class="space-y-3">
-        <h1 class="border-b border-dashed">联系我</h1>
+        <h1 class="border-b border-dashed text-base">联系我</h1>
 
         <p class="">
           随时可以给我发送

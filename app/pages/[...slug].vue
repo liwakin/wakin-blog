@@ -30,7 +30,7 @@ const { data: page } = await useAsyncData(route.path, () => {
   </template>
   <template v-else>
     <div class="-mt-6 flex w-full flex-col gap-4 bg-inherit pt-10 text-center">
-      <h1>{{ route.path }} - Not Found</h1>
+      <h1 class="text-2xl font-semibold">{{ route.path }} - Not Found</h1>
       <p>哎呀! 找不到你要的内容。</p>
       <NuxtLink to="/" class="text-blue-500 hover:underline">返回首页</NuxtLink>
     </div>
