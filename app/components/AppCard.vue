@@ -12,7 +12,7 @@ const props = defineProps<{
 <template>
   <div class="w-full">
     <div
-      class="-ml-10 rounded-l-full p-2 px-16 text-gray-50 lg:-ml-8"
+      class="-ml-10 rounded-l-full p-2 px-16 text-white lg:-ml-8"
       :class="[props.theme === 'primary' ? 'bg-orange-400' : 'bg-teal-600']"
     >
       <h1

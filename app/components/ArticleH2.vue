@@ -10,7 +10,7 @@ const props = defineProps<{
   >
     <NuxtLink
       :to="`#${props.id}`"
-      class="cursor-pointer text-gray-50 no-underline hover:underline"
+      class="cursor-pointer text-white no-underline hover:underline"
     >
       {{ props.id }}
     </NuxtLink>

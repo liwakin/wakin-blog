@@ -18,7 +18,7 @@ const route = useRoute()
 
       <NuxtLink
         v-if="route.path !== '/who'"
-        class="flex cursor-pointer items-center px-4 py-2 text-gray-50 hover:underline lg:hidden"
+        class="flex cursor-pointer items-center px-4 py-2 text-white hover:underline lg:hidden"
         to="/who"
       >
         谁?
